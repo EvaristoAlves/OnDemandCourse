@@ -1,6 +1,8 @@
-﻿namespace CourseOnDemand.Domain;
+﻿using Flunt.Notifications;
 
-public abstract class Entity
+namespace CourseOnDemand.Domain;
+
+public abstract class Entity : Notifiable<Notification>
 {
     public Entity()
     {
